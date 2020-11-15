@@ -1,0 +1,24 @@
+{
+  "name": "twitter-clone",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devtonweb/twitter-clone.git"
+  },
+  "keywords": [],
+  "author": "devtonweb@protonmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devtonweb/twitter-clone/issues"
+  },
+  "homepage": "https://github.com/devtonweb/twitter-clone#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.29.0"
+  }
+}

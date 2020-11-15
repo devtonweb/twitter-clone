@@ -1,0 +1,89 @@
+.navbar
+  display: flex
+  flex-direction: column
+  padding-top: 3px
+  overflow-y: auto
+
+  .has-notif
+    position: relative
+    .notif
+      position: absolute
+      top: 4px
+      right: 6px
+      color: #fff
+      background-color: $primary
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 16px
+      height: 16px
+      font-size: .75rem
+      border: 1px solid #fff
+
+  .twitter-logo svg, a.active svg
+    fill: $primary
+
+  .twitter-logo
+    width: 30px
+    margin-left: auto
+    margin-right: auto
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 8.5px
+    margin-bottom: 5px
+
+  nav a, nav button, .twitter-logo, .tweet-link
+    border-radius: 50%
+
+  nav a, nav button, .twitter-logo
+    transition: background-color .2s
+    &:hover
+      background-color: rgba($primary, .1)
+
+  nav
+    display: flex
+    flex-direction: column
+    align-items: center
+    a, button
+      padding: 10px
+      margin-top: 7px
+      margin-bottom: 7px
+      svg
+        display: block
+        width: 26.25px
+      &:hover
+        fill: $primary
+
+  .tweet-link
+    background: $primary
+    transition: background-color .2s
+    margin: 20px auto 15px
+    display: flex
+    align-items: center
+    justify-content: center
+    min-width: 49px
+    min-height: 49px
+    svg
+      fill: #fff
+      width: 22.4px
+    &:hover
+      background-color: darken($primary, 5%)
+
+  .profile-link
+    margin: auto auto 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    min-width: 59px
+    min-height: 59px
+    transition: background-color .2s
+    border-radius: 50%
+    &:hover
+      background-color: rgba($blue, .1)
+    img
+      border-radius: 50%
+      display: block
+      max-width: 39px
+      height: auto
