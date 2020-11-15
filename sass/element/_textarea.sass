@@ -1,0 +1,21 @@
+textarea
+  width: 100%
+  border: 0
+  resize: vertical
+  font-size: 19px
+  font-family: inherit
+  padding-top: 12px
+  padding-bottom: 12px
+  height: 25px
+  margin: initial
+  color: $gray-9
+  &:focus
+    outline: none
+  &::placeholder
+    color: $gray-5
+    opacity: 1
+  &:focus
+    + div
+      display: block
+  + div
+    display: none

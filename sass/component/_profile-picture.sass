@@ -1,0 +1,21 @@
+.profile-picture
+  min-width: 49px
+  width: 49px
+  height: 49px
+  overflow: hidden
+  margin-right: 10px
+  transition: filter .2s
+  box-sizing: border-box
+  position: relative
+  border-radius: 50%
+  &:after
+    border-radius: 50%
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    border: 1px solid rgba($black, .04)
+  &:hover
+    filter: brightness(.9)

@@ -1,0 +1,55 @@
+.tweetbox
+  display: flex
+  padding: 10px 15px
+  border-bottom: 10px solid $gray-1
+  > div
+    flex: 1
+  .tweet-scope
+    border-bottom: 1px solid $gray-1
+    padding-bottom: 10px
+    button
+      display: flex
+      align-items: center
+      color: $primary
+      font-weight: 700
+      font-size: .8125rem
+      transition: background-color .2s
+      border-radius: 20px
+      padding: .3125rem .375rem
+      &:hover
+        background-color: rgba($primary, .1)
+      svg
+        margin-right: .375rem
+        width: 20px
+        fill: $primary
+
+  .actions
+    display: flex
+    padding-top: 10px
+    justify-content: space-between
+    align-items: center
+    > div
+      display: flex
+      margin-left: -.5rem
+      button
+        width: 39px
+        height: 39px
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: background-color .2s
+        &:hover
+          background-color: rgba($primary, .1)
+        svg
+          fill: $primary
+          width: 22.5px
+    > button
+      background-color: $primary
+      color: #fff
+      padding: .625rem 1rem
+      border-radius: 25px
+      font-weight: 700
+      font-size: .9375rem
+      &:disabled
+        background-color: lighten($primary, 20%)
